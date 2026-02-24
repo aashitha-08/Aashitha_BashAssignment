@@ -1,7 +1,7 @@
 #!/bin/bash
 
 choice=0
-
+#first, we will create the menu for the choices
 while [ $choice -ne 8 ]
 do
     echo "----------------------------------------"
@@ -16,9 +16,9 @@ do
     echo "7. Count files and directories"
     echo "8. Exit"
     echo "----------------------------------------"
-
+    #we take the user input for choice
     read -p "Enter your choice: " choice
-
+    #implement a switch case for all the choices
     case $choice in
 
     1)
